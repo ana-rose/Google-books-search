@@ -1,0 +1,14 @@
+@use "./modules/book-grid.scss";
+@use "./modules/search.scss";
+@use "./modules/intro.scss";
+@use "./partials/palette";
+@use "./mixins.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Playfair Display", serif;
+    background-color: palette.$color-background;
+}

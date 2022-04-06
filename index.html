@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Google Books Search</title>
+    </head>
+    <body>
+        <section class="intro">
+            <div class="intro__block">
+                <h2 class="intro__title">Discover books you'll love.</h2>
+                <p class="intro__text">
+                    Looking for something new to read? You're in the right
+                    place.
+                </p>
+                <p class="intro__text">
+                    Type in a keyword, such as a topic you're interested in, an
+                    author or a category. We will analyse our huge database of
+                    real readers' favorite books and provide book
+                    recommendations and suggestions for what to read next.
+                </p>
+            </div>
+        </section>
+        <section class="search">
+            <input class="search__input-field" id="searchInput" type="text" />
+            <button class="search__button" id="searchBooks">
+                SEARCH FOR BOOKS
+            </button>
+        </section>
+        <div class="results" id="results"></div>
+    </body>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="fetching-books.js"></script>
+    <script type="module" src="dom-utensils.js"></script>
+</html>

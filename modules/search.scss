@@ -1,0 +1,42 @@
+@use "./../partials/palette";
+@use "./../mixins.scss";
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palette.$color-beige-light;
+    padding: 30px;
+    margin: 30px;
+
+    &__input-field {
+        font-family: "Playfair Display", serif;
+        margin: 10px 5px 10px 0;
+        width: 40vw;
+        height: 40px;
+        background-color: palette.$color-background;
+        border: 1px solid;
+        border-color: palette.$color-aqua;
+        padding: 0 5px;
+    }
+    &__button {
+        font-family: "Playfair Display", serif;
+        margin: 10px 0 10px 5px;
+        width: 20vw;
+        height: 40px;
+        background-color: palette.$color-aqua;
+
+        border: none;
+    }
+    @include mixins.phone {
+        flex-direction: column;
+        &__input-field {
+            width: 100%;
+            margin: 0;
+        }
+        &__button {
+            width: 100%;
+            margin: 10px 0 0 0;
+        }
+    }
+}
