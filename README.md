@@ -1,5 +1,7 @@
 # Google-books-search
 
+A single-page UI for the Google Books API using JavaScript.
+
 # MVP
 
 1. Create a page that allows users to search for books
