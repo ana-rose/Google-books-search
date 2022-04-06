@@ -25,7 +25,11 @@
         width: 20vw;
         height: 40px;
         background-color: palette.$color-aqua;
-
+        -moz-appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        color: black;
         border: none;
     }
     @include mixins.phone {
